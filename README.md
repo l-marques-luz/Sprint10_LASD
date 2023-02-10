@@ -92,8 +92,36 @@ endmodule
 #### Os detalhes de funcionamento do codigo foram explicados no video de demonstração, mas segue abaixo uma copia do codigo utilizado:
 ```asm
 addi $4,$0, abcd
-addi $2,$0, 8
-addi $5,$0, 4
-addi $6,$0, 8
+addi $2,$0, 2
+addi $5,$0, 1
+addi $6,$0, 2
 beq $2,$5, 2
+beq $2,$6, 11
+j 5F
+srl $1,$4,C
+sll $4,$4 4
+srl $2,$4,C
+sll $4,$4 4
+srl $3,$4,C
+sll $4,$4 4
+srl $4,$4,C
+add $1,$1,$2
+add $1,$1,$3
+add $1,$1,$4
+srl $2,$1,4
+sll $1,$1,C
+srl $1,$1,C
+add $1,$1,$2
+nor $1,$1,$0
+j 5F
+srl $1,$4,8
+sll $4,$4 8
+srl $2,$4,8
+add $1,$1,$2
+srl $2,$1,8
+sll $1,$1,8
+srl $1,$1,8
+add $1,$1,$2
+nor $1,$1,$0    
+
 ```
