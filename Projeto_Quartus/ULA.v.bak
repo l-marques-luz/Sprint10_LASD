@@ -1,0 +1,33 @@
+module ULA(
+input [7:0] SrcA,SrcB,
+input [2:0] ULAControl,
+output reg Z,
+output reg [7:0] ULAResult
+);
+
+always @(*)
+begin
+	case(ULAControl)
+		3'b000 :  ULAResult = SrcA & SrcB;
+		3'b001 :  ULAResult = SrcA | SrcB;
+		3'b010 :  ULAResult = SrcA + SrcB;
+		3'b011 :  ULAResult = ~(SrcA | SrcB);
+		3'b110 :  ULAResult = SrcA + ~SrcB + 1;
+	endcase
+	
+	if ( ULAControl == 3'b111)
+	begin
+		if( SrcA < SrcB)
+			ULAResult = 1;
+		else
+			ULAResult = 0;
+	end
+	
+	
+	if(ULAResult == 0)
+		Z = 1;
+	else
+		Z = 0; 
+
+end
+endmodule

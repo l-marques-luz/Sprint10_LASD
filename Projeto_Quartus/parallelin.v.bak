@@ -1,0 +1,17 @@
+module ParallelIN (
+input [7:0] Address,MemData,DataIn,
+output [7:0] RegData
+);
+wire sel
+
+always @(*)
+begin
+	if(Address==8'hFF)
+		sel = 1;
+	else
+		sel = 0;
+end
+
+mux2 mux(.entrada0(MemData),.entrada1(DataIn),.sel(sel),.saida(RegData));
+
+endmodule
