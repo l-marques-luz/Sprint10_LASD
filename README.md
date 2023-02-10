@@ -23,25 +23,25 @@
 #### Primeiramente foi necessario fazer a ControlUnity reconhecer essas funções, sll e srl sao funções do tipo R, com OP = 000000 e funct = 000000/000010, logo esses 2 casos foram adicionados ao ControlUnity:
 ```v
 6'b000000: begin
-													RegWrite = 1;
-													RegDst = 1;
-													ULASrc = 0;
-													ULAControl = 3'b100;
-													Branch = 0;
-													MemWrite = 0;
-													MemtoReg = 0;
-													Jump = 0;
-												end
-								6'b000010: begin
-													RegWrite = 1;
-													RegDst = 1;
-													ULASrc = 0;
-													ULAControl = 3'b101;
-													Branch = 0;
-													MemWrite = 0;
-													MemtoReg = 0;
-													Jump = 0;
-												end
+	RegWrite = 1;
+	RegDst = 1;
+	ULASrc = 0;
+	ULAControl = 3'b100;
+	Branch = 0;
+	MemWrite = 0;
+	MemtoReg = 0;
+	Jump = 0;
+end
+6'b000010: begin
+	RegWrite = 1;
+	RegDst = 1;
+	ULASrc = 0;
+	ULAControl = 3'b101;
+	Branch = 0;
+	MemWrite = 0;
+	MemtoReg = 0;
+	Jump = 0;
+end
 ```
 #### (Os valores da ULAControl correspondem aos 2 valores que não eram utilizados por outras funções)
 ####
@@ -93,8 +93,8 @@ endmodule
 ```asm
 addi $4,$0, abcd
 addi $2,$0, 2
-addi $5,$0, 1
-addi $6,$0, 2
+addi $5,$0, 2
+addi $6,$0, 4
 beq $2,$5, 2
 beq $2,$6, 11
 j 5F
