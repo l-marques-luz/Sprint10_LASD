@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -19.043
+TNS   : -13789.486
+
+Type  : Slow Model Setup 'SW[17]'
+Slack : -16.637
+TNS   : -1896.554
+
+Type  : Slow Model Setup 'RomInstMem:InstMem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -5.295
+TNS   : -35.624
+
+Type  : Slow Model Hold 'RomInstMem:InstMem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -14.241
+TNS   : -115.150
+
+Type  : Slow Model Hold 'SW[17]'
+Slack : -0.741
+TNS   : -3.898
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'RomInstMem:InstMem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -11.034
+TNS   : -8466.566
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.000
+TNS   : -3939.916
+
+Type  : Slow Model Minimum Pulse Width 'SW[17]'
+Slack : -1.222
+TNS   : -128.222
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -8.651
+TNS   : -6061.424
+
+Type  : Fast Model Setup 'SW[17]'
+Slack : -7.350
+TNS   : -834.035
+
+Type  : Fast Model Setup 'RomInstMem:InstMem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.372
+TNS   : -12.231
+
+Type  : Fast Model Hold 'RomInstMem:InstMem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -6.869
+TNS   : -55.355
+
+Type  : Fast Model Hold 'SW[17]'
+Slack : -0.405
+TNS   : -1.743
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'RomInstMem:InstMem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -5.083
+TNS   : -2704.924
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.000
+TNS   : -3939.916
+
+Type  : Fast Model Minimum Pulse Width 'SW[17]'
+Slack : -1.222
+TNS   : -128.222
+
+------------------------------------------------------------
