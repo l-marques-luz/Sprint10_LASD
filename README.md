@@ -90,7 +90,7 @@ endmodule
 # Projeto:
 #### Meu projeto consiste na implementação de um codigo para realizar uma operação de checksum, bastante usada para detectar dados corrompidos ou modificados, esse codigo é capaz de realizar checksum's de 1 ou 2 bytes em um dado de 16 bits.
 #### Os detalhes de funcionamento do codigo foram explicados no video de demonstração, mas segue abaixo uma copia do codigo utilizado:
-```asm
+```assembly
 addi $4,$0, abcd
 addi $2,$0, 2
 addi $5,$0, 2
